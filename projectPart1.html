@@ -1,0 +1,135 @@
+<h1 id="project-part-1">Project Part 1</h1>
+<p>The goal of this part of the project is to get some familarity with how to approach a machine learning data science project. You will be working with the data science cookie cutter template. This will be an individual project but you will be exploring data sets you may eventually work with as part of your project.</p>
+<h2 id="overview-of-steps">Overview of Steps</h2>
+<h3 id="step-0-keep-data-out-of-repo-but-everything-else-shoudl-be-there">Step 0: Keep Data out of Repo but everything else shoudl be there</h3>
+<p><strong>Warning:</strong> Never commit large data files in a github repository.</p>
+<p>It is important that you never commit large files into your repository. It is very very hard to delete files in a git repository. Sure, you can delete the file and commit it but a copy of the file ends up living in the hidden .git directory. You can’t just delete it there. If you do you risk corrupting the whole repository. Instead you should use <a href="https://git-scm.com/docs/gitignore">.gitignore</a>, as in the blog post <a href="https://www.freecodecamp.org/news/gitignore-what-is-it-and-how-to-add-to-repo/">Gitignore, What is it and How to Add to Repo</a>. To manage large data file either use git <a href="https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage">Git Large File Storage</a> if the size is under 2GB, or learn how to keep your data in dropbox, microsoft one drive or google drive and link (shortcut) the file to the repository. You still may need to download it separately but CCNY/CUNY have large storage allowances for one drive and dropbox in particular.</p>
+<h3 id="step-1-keep-all-your-work-in-a-repo-and-commit-often">Step 1: Keep all your work in a repo and commit often</h3>
+<p>Open a git repository using the classroom link. The template should be created for you using <a href="https://drivendata.github.io/cookiecutter-data-science">Cookiecutter Data Science</a>. You will need to manually go through the files and change some of the variable names. Follow the README.md. Please read the cookiecutter documentation and use the structure of the template for this project.</p>
+<p>Keep in mind your experiments should go into the folder notebooks and your report should be in the reports folder. If you can factor out code that you will import into notebooks you should put that code in the src folder. Aagain read the <a href="https://drivendata.github.io/cookiecutter-data-science">Cookiecutter Data Science</a> documentation.</p>
+<p><strong>It is very important that you commit often. If there are not frequent commits I will have to assume the code was copied and pasted and you will recieve little credit. The work should show your thinking process over time and not just at the last minute</strong></p>
+<h3 id="step-2-selecting-data">Step 2: Selecting Data</h3>
+<p>Here are a number of resources for finding data sets</p>
+<h4 id="general-data-set-aggregators">General Data Set Aggregators</h4>
+<ul>
+<li><a href="https://www.kaggle.com/datasets">kaggle data sets</a> and</li>
+<li><a href="https://www.kaggle.com/competitions">kaggle challenges</a></li>
+<li><a href="https://github.com/awesomedata/awesome-public-datasets">awesome public data sets</a></li>
+<li><a href="https://www.openml.org/">OpenML</a></li>
+<li><a href="https://datahub.io/collections">Datahub.io Collections</a></li>
+<li><a href="https://paperswithcode.com/datasets">Paperswithcode Datasets</a></li>
+<li><a href="https://visualdata.io/discovery">VisualData Discovery</a></li>
+<li><a href="https://registry.opendata.aws/">Registry of Open Data on AWS</a></li>
+<li><a href="https://datasetsearch.research.google.com/help">Google Datasets</a></li>
+</ul>
+<h4 id="public-government-datasets">Public government datasets</h4>
+<ul>
+<li><a href="https://data.gov/">Data.gov</a></li>
+<li><a href="https://datausa.io/">Data USA</a></li>
+<li><a href="https://data.europa.eu/data/datasets?locale=en">data.europa.edu</a></li>
+<li><a href="https://researchguides.dartmouth.edu/c.php?g=517073&amp;p=6289098">US Healthcare Data</a></li>
+<li><a href="https://nces.ed.gov/">US Education Data</a></li>
+<li><a href="https://data.cityofnewyork.us/">NYC Open Data</a></li>
+<li><a href="https://data.lacity.org/">Los Angeles Open Data</a></li>
+<li><a href="https://data.cityofchicago.org/">Chicago Open Data</a></li>
+<li><a href="https://data.houstontx.gov/">Houston Open Data</a></li>
+<li><a href="https://ukdataservice.ac.uk/">UK Data Service</a></li>
+<li><a href="https://www.gov.uk/government/statistical-data-sets">UK Government Data</a></li>
+<li><a href="https://data.un.org/">United Nations</a></li>
+</ul>
+<h4 id="machine-learning-datasets-for-finance-and-econ">Machine Learning Datasets for Finance and Econ</h4>
+<ul>
+<li><a href="https://markets.ft.com/data/">Financial Times</a></li>
+<li><a href="https://www.quandl.com/data">quandl</a></li>
+<li><a href="https://www.imf.org/en/Data">IMF Data</a></li>
+<li><a href="https://www.jpmorganchase.com/en/investor/data-research/data-sets.html">JPMorgan</a></li>
+<li><a href="https://www.aeaweb.org/resources/data/">American Economic Association</a></li>
+<li><a href="https://data.worldbank.org/">World Bank</a></li>
+</ul>
+<h4 id="image-datasets-for-computer-vision">Image Datasets for Computer Vision</h4>
+<ul>
+<li><a href="http://labelme.csail.mit.edu/Release3.0/browserTools/php/dataset.php">MIT CSAIL LabelMe</a></li>
+<li><a href="https://image-net.org/">Imagenet</a></li>
+<li><a href="https://deepmind.com/research/open-source/kinetics/">Kinetics</a></li>
+<li><a href="https://paperswithcode.com/paper/lsun-construction-of-a-large-scale-image">LSUN: Construction of a Large-scale Image Dataset using Deep Learning with Humans in the Loop</a></li>
+<li><a href="https://paperswithcode.com/dataset/coco">MSCOCO</a></li>
+<li><a href="https://www1.cs.columbia.edu/CAVE/software/softlib/coil-100.php">COIL-100</a></li>
+<li><a href="http://visualgenome.org/">VisualGenome</a></li>
+<li><a href="https://ai.googleblog.com/2016/09/introducing-open-images-dataset.html">Open Images Dataset</a></li>
+<li><a href="https://research.google.com/youtube8m/index.html">YouTube-8M</a></li>
+<li><a href="http://vis-www.cs.umass.edu/lfw/">Labeled Faces in the Wild</a></li>
+<li><a href="http://web.mit.edu/torralba/www/indoor.html">Indoor Scene Recognition</a></li>
+<li><a href="http://xviewdataset.org/">xView</a></li>
+<li><a href="http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html">CelebFaces</a></li>
+<li><a href="http://vision.stanford.edu/aditya86/ImageNetDogs/">Stanford Dogs Datasets</a></li>
+<li><a href="http://places.csail.mit.edu/index.html">Places</a></li>
+<li><a href="https://www.cityscapes-dataset.com/">CityScapes</a></li>
+<li><a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR</a></li>
+<li><a href="https://visualqa.org/">Visual Question Answering Datasets (VQA)</a></li>
+<li><a href="https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/">IMDB-WIKI</a></li>
+<li><a href="http://human-pose.mpi-inf.mpg.de/#overview">MPII Human Pose Dataset</a></li>
+<li><a href="https://ai.googleblog.com/2019/05/announcing-open-images-v5-and-iccv-2019.html">Google Open Images V5</a></li>
+</ul>
+<h4 id="natural-language-processing-datasets">Natural Language Processing Datasets</h4>
+<ul>
+<li><a href="https://index.quantumstat.com/">The Big Bad NLP Dataset</a></li>
+<li><a href="https://www.cs.cmu.edu/~enron/">Enron Email Dataset</a></li>
+<li><a href="https://archive.org/details/google_ngrams">Google NGrams</a></li>
+<li><a href="https://www.english-corpora.org/wiki/">The Wikipedia Corpus</a></li>
+<li><a href="https://www.kaggle.com/uciml/sms-spam-collection-dataset">SMS Spam Collection Datasets</a></li>
+<li><a href="https://www.yelp.com/dataset">Yelp Open Dataset</a></li>
+<li><a href="https://www.kaggle.com/rtatman/blog-authorship-corpus">Blog Authorship Corpus</a></li>
+</ul>
+<h4 id="sentiment-analysis-datasets-for-machine-learning">Sentiment Analysis Datasets for Machine Learning</h4>
+<ul>
+<li><a href="https://www.cs.jhu.edu/~mdredze/datasets/sentiment/">Multi-Domain Sentiment Dataset</a></li>
+<li><a href="https://nlp.stanford.edu/sentiment/code.html">Stanford Sentiment Analysis</a></li>
+<li><a href="http://help.sentiment140.com/for-students/">Sentiment140</a></li>
+<li><a href="https://ai.stanford.edu/~amaas/data/sentiment/">IMDB Movie Reviews Dataset</a></li>
+<li><a href="https://www.kaggle.com/crowdflower/twitter-airline-sentiment">Twitter US Airline Sentiment</a></li>
+<li><a href="https://archive.ics.uci.edu/ml/datasets/opinrank+review+dataset">OpinRank Review Dataset Data Set</a></li>
+<li><a href="https://nijianmo.github.io/amazon/index.html">Amazon Review Data</a></li>
+<li><a href="https://www.kaggle.com/rtatman/sentiment-lexicons-for-81-languages">Sentiment Lexicons for 81 Languages</a></li>
+<li><a href="https://archive.ics.uci.edu/ml/datasets/Paper+Reviews">Paper Reiviews</a></li>
+</ul>
+<h4 id="text-datasets-for-natural-language-processing">Text Datasets for Natural Language Processing</h4>
+<ul>
+<li><a href="https://www.j-archive.com/">Jepordy Datasets</a></li>
+<li><a href="http://qwone.com/~jason/20Newsgroups">20 Newsgroups</a></li>
+<li><a href="https://archive.ics.uci.edu/ml/datasets/Legal+Case+Reports">Legal Case Reports Data Set</a></li>
+<li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=52419&amp;from=http%3A%2F%2Fresearch.microsoft.com%2Fapps%2Fmobile%2Fdownload.aspx%3Fp%3D4495da01-db8c-4041-a7f6-7984a4f6a905">Microsoft Research WikiQA Corpus</a></li>
+<li><a href="https://www.gutenberg.org">Public Databases</a></li>
+</ul>
+<h4 id="audio-speech-and-music-datasets-for-machine-learning-projects">Audio Speech and Music Datasets for Machine Learning Projects</h4>
+<ul>
+<li><a href="https://commonvoice.mozilla.org/en/datasets">Common Voice</a></li>
+<li><a href="https://research.google.com/audioset/">Google AudioSet</a></li>
+<li><a href="https://www.openslr.org/12/">LibriSpeech</a></li>
+<li><a href="https://nats.gitlab.io/swc/">The Spoken Wikipedia Corpora</a></li>
+<li><a href="http://www.voxforge.org/">VoxForge</a></li>
+<li><a href="https://github.com/mdeff/fma">Free Music Archive (FMA)</a></li>
+<li><a href="http://mtg.upf.edu/ismir2004/contest/tempoContest/node5.html">Ballroom</a></li>
+</ul>
+<h4 id="autonomoust-vehicles-datasets">Autonomoust Vehicles Datasets</h4>
+<ul>
+<li><a href="https://bdd-data.berkeley.edu/">Berkeley DeepDrive BDD100K</a></li>
+<li><a href="https://archive.org/details/comma-dataset">comma.ai driving dataset</a></li>
+<li><a href="https://robotcar-dataset.robots.ox.ac.uk/">Oxford’s Robotic Car</a></li>
+<li><a href="https://cvrr.ucsd.edu/home">Laboratory for Intelligent &amp; Safe Automobiles</a></li>
+<li><a href="http://apolloscape.auto/">Baidu ApolloScape: Dataset for Autnomous Driving</a></li>
+<li><a href="https://ai.googleblog.com/2018/03/google-landmarks-new-dataset-and.html">Google-Landmarks-v1</a>, <a href="https://ai.googleblog.com/2018/03/google-landmarks-new-dataset-and.html">Google-Landmarks-v2</a></li>
+<li><a href="https://scale.com/open-datasets/pandaset">PandaSet</a></li>
+<li><a href="https://www.nuscenes.org/">NuScenes</a></li>
+<li><a href="https://waymo.com/open/">Open Waymo Dataset</a></li>
+</ul>
+<h3 id="step-3-plan-for-you-future-project">Step 3: Plan for you future project</h3>
+<p>Please use this refrerence in terms of your future project: <a href="http://cs229.stanford.edu/projects.html">Stanford Univerisity's CS229</a>. It also has some good discussion of what you might do for a project and where you may find data. Make sure that you are looking at a data set that is not a simple quick execise. This should not be a small data set like the titanic data set or the MNIST data set. It should either by large in terms of the number of data points (at least several thousand “rows”) or large in the number of features. For example images and audio files are typically complex with many dimensions in terms of number of features.</p>
+<p>Think about different hypothesis you could investigate on your data set. Take notes in a markdown file indicating the kind of hypothesis you expect to see when you look at your data. As you do EDA you should revisie these.</p>
+<h3 id="step-4-data-wrangling-data-cleaning-preliminary-eda">Step 4: Data Wrangling, Data Cleaning, Preliminary EDA</h3>
+<p>How much missing data is there? Determine a prelimanary EDA to look at basic statistics and to see if there is to much missing data? What are the means, standard deviations, and other statisics on feaures. What happends when you filling in missing data will effects the statistics? There should be figures and discussion. Please use notebooks to do your analysis but when you submit, you must summerise your analysis. Do NOT just fill notebooks with output of some kind of runs without discussion or figures.</p>
+<h3 id="step-5-eda-and-data-visualization">Step 5: EDA and Data Visualization</h3>
+<p>Here you should show again the overall statistics of features or potential features. Besides summary statistics, you should be showing how potential features relate to each other using measures such as correlation or mutual information. One of your goals should be either regression or classification and you should explore what features are correllated with your target label or variable. This should be visible in the plots. Again, in your experimental notebooks this may be a bit disorganized, but there should be a notebook where the explanation is clearly spelled out and summerized. Whenever you make a run, take the time to explain not just what the figure is but what it ended up showing. Each diagram figure and result tells you something, explain what.</p>
+<h3 id="step-6-invesigate-some-models-and-the-importance-of-features.">Step 6: Invesigate some models and the importance of features.</h3>
+<p>Here you should run classification models or/regression models to see how strong a signal there is in your data set. Your data should <strong>always</strong> have training, validation and testing data subsets. You should make your exploration based on the training and validation sets. The key question is, again what features and normalizations provide the strongets results from simple models such as KNN, linear models (eg logistic regression), and decision trees. You should pick the models appart, and generate some visualizations to understand exactly how these models do and why. To the extent that there is some data on which these models do not work well, you should discuss why by looking at the original data for those data and trying to determine if those points are special in anyother way.</p>
+<h3 id="step-7-provide-evaluation-and-conclusions">Step 7: Provide evaluation and conclusions</h3>
+<p>Your result should include peformance metrics, classification reports, accuracies, confusion matrices, and ROC curves. Again you should explain your results. If you have a model with high “accuracy” but unbalanced classes, then your accuracy is meaningless and you should balance first. Make sure you understand what is the reason for unbalanced false postives or false negatives, and how you can fix it. Again, when you present things do not just simply show but explain WHAT it shows and what the impact is. Commit all these into your repo and submit that repo to submission in blackboard.</p>
