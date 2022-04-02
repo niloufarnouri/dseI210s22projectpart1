@@ -8,7 +8,7 @@ Above change YourProjectName to your project name. Put a short discription of yo
 Make sure you edit all the files to put in the reponame, your project name where you see YourProjectName and you name instead of "firstname lastname" Please read the cookiecutter documentation. For example:
 
 # Filename: Makefile
-PROJECT_NAME = YourProjectName -> substitute your project name
+PROJECT_NAME = YourProjectName -> Credit Card Fraud Detection
 
 # config.py
 YourProjectName -> substitute your project name
