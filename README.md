@@ -20,7 +20,7 @@ YourProjectName documentation!
 
 # setup.py
 description='A short description of the project.'
-author='firstname lastname'
+author='Niloufar Nouri'
 
 
 Project Organization
