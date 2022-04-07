@@ -1,4 +1,4 @@
-YourProjectName
+Fraud detection in the credit card transactions
 ==============================
 
 Short description of your project.
